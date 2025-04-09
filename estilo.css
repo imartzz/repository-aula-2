@@ -4,18 +4,34 @@
 }
 .container{
     border: 1px solid gainsboro;
-    width: 15rem;
+    width: 28rem;
     height: 20rem;
     padding: 1rem;
-    border-radius: 0,5rem;
+    border-radius: 0.5rem;
     box-shadow: .5rem .5rem .3rem .01rem gainsboro;
     margin: 1rem auto;
 }
 .secao{
     border: 1px solid gainsboro;
-    width: 14rem;
+    width: 27rem;
     height: 19rem;
-    border-radius: 0,5rem;
+    border-radius: 0.5rem;
     background-color: gainsboro;
     padding: .5rem;
+}
+.entrada{
+    margin: .5rem 0rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+input {
+    width: 9rem;
+}
+.painel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 16rem;
+
 }
