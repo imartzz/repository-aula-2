@@ -1,0 +1,21 @@
+*{
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    border: 1px solid gainsboro;
+    width: 15rem;
+    height: 20rem;
+    padding: 1rem;
+    border-radius: 0,5rem;
+    box-shadow: .5rem .5rem .3rem .01rem gainsboro;
+    margin: 1rem auto;
+}
+.secao{
+    border: 1px solid gainsboro;
+    width: 14rem;
+    height: 19rem;
+    border-radius: 0,5rem;
+    background-color: gainsboro;
+    padding: .5rem;
+}

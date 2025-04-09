@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 01</title>
+    <style>
+        *{
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="resp"></div>
+    <script>
+        /* Estrutura sequencial
+       * Variáveis
+       * Comandos de entrada
+       */ 
+      var num = prompt("Informe o Numero:");
+      document.getElementById("resp").innerHTML = `Numero informado: ${num}`;  // Correção: template literal fechada corretamente
+    </script>
+</body>
+</html>

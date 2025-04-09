@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 01</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="container">
+        <section id="resp" class="secao"></section>
+    </div>
+    <script>
+        /* Estrutura sequencial
+       * Variáveis
+       * Comandos de entrada
+       * Arquivo Estilo Externo
+       */ 
+      var num1 = prompt("Informe o primeiro Numero:");
+      var num2 = prompt("Informe o Segundo Numero:");
+
+      // Convertendo as entradas para inteiros
+      var soma = parseInt(num1) + parseInt(num2);
+
+      // Exibindo a soma no HTML
+      document.getElementById("resp").innerHTML = `${num1} + ${num2} = ${soma}<br>`;
+    </script>
+</body>
+</html>
