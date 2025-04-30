@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 01</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="container">
+        <section class="secao">
+            <div class="entrada">
+                <input type="number" id="num1" class="numero" placeholder="primeiro numero">
+                <input type="number" id="num2" class="numero" placeholder="segundo numero">
+                <div class="botoes">
+                    <button onclick="somar()">Somar</button>
+                    <button onclick="resetar()">Resetar</button>
+                </div>
+            </div>
+            <div class="painel">
+                <div id="resp"></div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        function calcularSoma(x, y) {
+            return x + y;
+        }
+
+        function lerNumeros() {
+            const num1 = parseInt(document.getElementById('num1').value) || 0;
+            const num2 = parseInt(document.getElementById('num2').value) || 0;
+            return { num1, num2 };
+        }
+
+        function somar() {
+            const numeros = lerNumeros();
+            const resultado = calcularSoma(numeros.num1, numeros.num2);
+            document.getElementById('resp').innerHTML += 
+                `<br>${numeros.num1} + ${numeros.num2} = ${resultado}`;
+        }
+
+        // Função para limpar todos os campos
+        function resetar() {
+            // Limpa os inputs
+            document.getElementById('num1').value = '';
+            document.getElementById('num2').value = '';
+            
+            // Limpa o painel de resultados
+            document.getElementById('resp').innerHTML = '';
+        }
+    </script>
+</body>
+</html>
